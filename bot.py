@@ -8,7 +8,7 @@ client = pymongo.MongoClient('mongodb://localhost:27017/')
 db = client['dhio']
 def getItems(substr):
     col = db['bank']
-    rec = col.find({'item_name': { '$regex': '.*'+substr.lower()+'.'}}, {'_id': 0})
+    rec = col.find({'item_name': { '$regex': '.*'+substr.lower()+'.*'}}, {'_id': 0})
     l = []
     for it in rec:
         if(it['amount'] > 0):
@@ -28,6 +28,7 @@ bot = commands.Bot(intents=discord.Intents.all(), command_prefix='!')
 
 @bot.command(name='find', help='Search the available dhio items banked.')
 async def bank(ctx, search):
+    db = client['dhio']
     r = getItems(search)
     resp = getDate() + "\n\n"
     if(len(r) == 0):

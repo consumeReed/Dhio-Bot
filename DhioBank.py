@@ -26,6 +26,7 @@ while True:
     if event == '  Search  ':
         tmp = db_req.getItems(values['-FILTER-'])
         list = tmp
+        print(tmp)
         window.Element('-TABLE-').update(tmp)
     elif event == '  Inc/Dec  ' and values['-NUM-'] != '' and len(values['-TABLE-']) > 0:
         index = values['-TABLE-'][0]

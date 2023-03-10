@@ -39,7 +39,7 @@ def removeFromRecent(id, item):
 
 def getItems(substr):
     col = db['bank']
-    rec = col.find({'item_name': { '$regex': '.*'+substr.lower()+'.'}}, {'_id': 0})
+    rec = col.find({'item_name': { '$regex': '.*'+substr.lower()+'.*'}}, {'_id': 0})
     l = []
     for it in rec:
         l.append([it['item_name'], it['amount']])

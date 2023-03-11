@@ -3,6 +3,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import discord
 import pymongo
+from datetime import datetime
 
 classes = ['mage', 'druid', 'warrior', 'rogue', 'ranger']
 
@@ -48,7 +49,11 @@ def addToBank(item, v):
         {'id': item},
         {'$inc': {'amount': int(v)}}
     )
-    
+
+def changeDate():
+    col = db['date']
+    col.update_one({"id": 1},{'$set':{"date": datetime.today()}})
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
@@ -85,6 +90,7 @@ async def up(message, *, search):
         inp = str(search).split()
         #out = 'id: '+ str(inp[0]) + '   quantity: '+ str(inp[1])
         addToBank(int(inp[0]), int(inp[1]))
+        changeDate()
 
 @bot.command(name='ids', help='Shows ids of items')
 async def i(ctx, search):

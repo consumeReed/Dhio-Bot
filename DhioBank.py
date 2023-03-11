@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-import db_req
+import db_req as db_req
 import pandas as pd
 from datetime import datetime
 

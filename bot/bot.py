@@ -43,6 +43,14 @@ def getIds(ch):
         l.append([it['id'], it['item_name']])
     return l
 
+def getIdsName(it):
+    col = db['bank']
+    rec = col.find({'item_name': { '$regex': '.*'+it.lower()+'.*'}}, {'_id': 0})
+    l = []
+    for it in rec:
+        l.append([it['id'], it['item_name']])
+    return l
+
 def addToBank(item, v):
     col = db['bank']
     col.update_one(
@@ -94,19 +102,26 @@ async def up(message, *, search):
 
 @bot.command(name='ids', help='Shows ids of items')
 async def i(ctx, search):
-    items = getIds(search)
-    l = len(items)
-    k = 0
-    resp = ''
-    resp2 = ''
-    for i in items:
-        k+=1
-        if(k<l/2):
-            resp+= str(i[0]) + '  ' + i[1]+"\n"
-        else:
-            resp2+= str(i[0]) + '  ' + i[1]+"\n"
-    
-    await ctx.send(resp)
-    await ctx.send(resp2)
+    if search in classes:
+        items = getIds(search)
+        l = len(items)
+        k = 0
+        resp = ''
+        resp2 = ''
+        for i in items:
+            k+=1
+            if(k<l/2):
+                resp+= str(i[0]) + '  ' + i[1]+"\n"
+            else:
+                resp2+= str(i[0]) + '  ' + i[1]+"\n"
+        
+        await ctx.send(resp)
+        await ctx.send(resp2)
+    else:
+        items = getIdsName(search)
+        resp = ''
+        for i in items:
+            resp+=str(i[0]) + '  ' + i[1]+'\n'
+        await ctx.send(resp)
 
 bot.run(TOKEN)

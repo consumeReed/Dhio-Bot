@@ -10,6 +10,17 @@ classes = ['mage', 'druid', 'warrior', 'rogue', 'ranger']
 client = pymongo.MongoClient('mongodb://localhost:27017/')
 db = client['dhio']
 
+def formatItem(item):
+    formatted_output = ''
+    l = item.split(' ')
+    for word in l:
+        if word != 'of':
+            formatted_output+= word.capitalize() + ' '
+        else:
+            formatted_output+=word +' '
+    return formatted_output
+
+
 def getItems(substr):
 
     if substr.lower() in classes: 
@@ -18,7 +29,7 @@ def getItems(substr):
         l = []
         for it in rec:
             if(it['amount']> 0):
-                l.append([it['id'], it['item_name'], it['amount']])
+                l.append([it['id'], formatItem(it['item_name']), it['amount']])
         return l
 
     else:
@@ -27,9 +38,12 @@ def getItems(substr):
         l = []
         for it in rec:
             if(it['amount']> 0):
-                l.append([it['id'], it['item_name'], it['amount']])
+                l.append([it['id'], formatItem(it['item_name']), it['amount']])
         return l
+    
 
+
+    
 def getDate():
     col = db['date']
     r = col.find({'id': 1})
@@ -121,7 +135,7 @@ async def i(ctx, search):
         items = getIdsName(search)
         resp = ''
         for i in items:
-            resp+=str(i[0]) + '  ' + i[1]+'\n'
+            resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
         await ctx.send(resp)
 
 bot.run(TOKEN)

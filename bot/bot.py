@@ -47,14 +47,14 @@ def getItems(substr):
 def getDate():
     col = db['date']
     r = col.find({'id': 1})
-    return 'Bot Last Updated at ' + str(r[0]['date'].strftime('%I:%M%p on %B %d %Y'))
+    return str(r[0]['date'].strftime('%I:%M%p on %B %d %Y'))
 
 def getIds(ch):
     col = db['bank']
     rec = col.find({'class': ch}, {'_id': 0})
     l = []
     for it in rec:
-        l.append([it['id'], it['item_name']])
+        l.append([it['id'], formatItem(it['item_name'])])
     return l
 
 def getIdsName(it):
@@ -76,6 +76,20 @@ def changeDate():
     col = db['date']
     col.update_one({"id": 1},{'$set':{"date": datetime.today()}})
 
+def getRecent():
+    res_list=[]
+    col = db['recent']
+    res = col.find().limit(10).sort("_id", -1)
+    for r in res:
+        res_list.append([r['id'], r['changed']])
+    return res_list
+
+def idToName(id):
+    col = db['bank']
+    rec = col.find({'id': int(id)}, {'_id': 0})
+    return formatItem(rec[0]['item_name'])
+
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
@@ -85,7 +99,7 @@ bot = commands.Bot(intents=discord.Intents.all(), command_prefix='!')
 async def bank(ctx, *, search):
     db = client['dhio']
     r = getItems(search)
-    resp = getDate() + "\n\n"
+    resp = 'Bot Last Updated at '+ getDate() + "\n\n"
     if(len(r) == 0):
         resp += 'No Results'
     for i in r:
@@ -110,9 +124,15 @@ async def up(message, *, search):
         return
     if message.author.id == 148113452534202368:
         inp = str(search).split()
-        #out = 'id: '+ str(inp[0]) + '   quantity: '+ str(inp[1])
+        if int(inp[1]) < 0:
+            out = idToName(inp[0])+ str(inp[1])
+        else:
+            out = idToName(inp[0])+ '+'+ str(inp[1])
         addToBank(int(inp[0]), int(inp[1]))
         changeDate()
+        col = db['recent']
+        col.insert_one({ "id": int(inp[0]), "changed": int(inp[1])})
+        await message.send(out)
 
 @bot.command(name='ids', help='Shows ids of items')
 async def i(ctx, search):
@@ -125,9 +145,9 @@ async def i(ctx, search):
         for i in items:
             k+=1
             if(k<l/2):
-                resp+= str(i[0]) + '  ' + i[1]+"\n"
+                resp+= '#'+str(i[0]) + '  ' + i[1]+"\n"
             else:
-                resp2+= str(i[0]) + '  ' + i[1]+"\n"
+                resp2+= '#'+str(i[0]) + '  ' + i[1]+"\n"
         
         await ctx.send(resp)
         await ctx.send(resp2)
@@ -138,4 +158,16 @@ async def i(ctx, search):
             resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
         await ctx.send(resp)
 
+@bot.command(name='recent', help='Shows the 10 most recently updated items')
+async def r(ctx):
+    resp = 'Recently Updated Items as of ' + getDate() + '\n\n'
+    rec = getRecent()
+    for r in rec:
+        resp+='#'+str(r[0])+' '+idToName(r[0])+ ' '
+        if r[1] >= 1:
+            resp+='+'+str(r[1])+'\n'
+        else:
+            resp+=str(r[1])+'\n'
+    await ctx.send(resp)
+    
 bot.run(TOKEN)

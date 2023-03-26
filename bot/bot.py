@@ -146,7 +146,7 @@ async def bt(ctx):
 @bot.command(name='show', help='Input item id to see stats as an image')
 async def im(ctx, search):
     if str(search).isnumeric():
-        if int(search) < 479:
+        if int(search) < 518:
             await ctx.send(file=discord.File('images/'+str(search)+'.PNG'))
 
 @bot.command(name='update')

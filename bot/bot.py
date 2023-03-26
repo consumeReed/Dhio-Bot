@@ -14,7 +14,7 @@ def formatItem(item):
     formatted_output = ''
     l = item.split(' ')
     for word in l:
-        if word != 'of':
+        if word != 'of' and word != 'the':
             formatted_output+= word.capitalize() + ' '
         else:
             formatted_output+=word +' '
@@ -40,9 +40,30 @@ def getItems(substr):
             if(it['amount']> 0):
                 l.append([it['id'], formatItem(it['item_name']), it['amount']])
         return l
-    
 
+def getBt():
+    col = db['bt']
+    rec = col.find({},{'_id': 0})
+    l = []
+    for it in rec:
+        if(it['amount']>0):
+            l.append([it['id'], formatItem(it['item_name']), it['amount']])
+    return l
 
+def addToBt(item, v):
+    col = db['bt']
+    col.update_one(
+        {'id': item},
+        {'$inc': {'amount': int(v)}}
+    )
+
+def getBtIdsName(it):
+    col = db['bt']
+    rec = col.find({'item_name': { '$regex': '.*'+it.lower()+'.*'}}, {'_id': 0})
+    l = []
+    for it in rec:
+        l.append([it['id'], it['item_name']])
+    return l
     
 def getDate():
     col = db['date']
@@ -85,9 +106,14 @@ def getRecent():
     return res_list
 
 def idToName(id):
-    col = db['bank']
-    rec = col.find({'id': int(id)}, {'_id': 0})
-    return formatItem(rec[0]['item_name'])
+    if id < 299:
+        col = db['bank']
+        rec = col.find({'id': int(id)}, {'_id': 0})
+        return formatItem(rec[0]['item_name'])
+    else:
+        col = db['bt']
+        rec = col.find({'id': int(id)}, {'_id': 0})
+        return formatItem(rec[0]['item_name'])
 
 
 load_dotenv()
@@ -106,35 +132,51 @@ async def bank(ctx, *, search):
         resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
     await ctx.send(resp)
 
-@bot.command(name='image', help='Input item id to see stats as an image')
-async def im(ctx, search):
-    if str(search).isnumeric():
-        if int(search) < 299:
-            await ctx.send(file=discord.File('images/'+str(search)+'.PNG'))
+@bot.command(name='bt', help='Shows the good BT gear in bank :3')
+async def bt(ctx):
+    r = getBt()
+    resp = 'All the good BT items :3\n\n'
+    if(len(r)== 0):
+        resp+= 'No Results'
+    for i in r:
+        resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
+    await ctx.send(resp)
+
 
 @bot.command(name='show', help='Input item id to see stats as an image')
 async def im(ctx, search):
     if str(search).isnumeric():
-        if int(search) < 299:
+        if int(search) < 479:
             await ctx.send(file=discord.File('images/'+str(search)+'.PNG'))
 
 @bot.command(name='update')
 async def up(message, *, search):
     if message.author == bot.user:
         return
-    if message.author.id == 148113452534202368:
+    if message.author.id == 148113452534202368 or message.author.id == 336429699469279232 or message.author.id == 365440390200950786:
         inp = str(search).split()
         if int(inp[1]) < 0:
-            out = idToName(inp[0])+ str(inp[1])
+            out = idToName(int(inp[0]))+ str(inp[1])
         else:
-            out = idToName(inp[0])+ '+'+ str(inp[1])
-        addToBank(int(inp[0]), int(inp[1]))
-        changeDate()
-        col = db['recent']
-        col.insert_one({ "id": int(inp[0]), "changed": int(inp[1])})
+            out = idToName(int(inp[0]))+ '+'+ str(inp[1])
+        if int(inp[0]) < 299:
+            addToBank(int(inp[0]), int(inp[1]))
+            changeDate()
+            col = db['recent']
+            col.insert_one({ "id": int(inp[0]), "changed": int(inp[1])})
+        else:
+            addToBt(int(inp[0]), int(inp[1]))
         await message.send(out)
 
-@bot.command(name='ids', help='Shows ids of items')
+@bot.command(name='btids', help='Shows ids of BT items')
+async def u(ctx, search):
+    items = getBtIdsName(search)
+    resp = ''
+    for i in items:
+        resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
+    await ctx.send(resp)
+
+@bot.command(name='ids', help='Shows ids of Dhio items')
 async def i(ctx, search):
     if search in classes:
         items = getIds(search)

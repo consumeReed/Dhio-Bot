@@ -209,7 +209,7 @@ def getLoot():
     loot = []
     loot_names = []
     loot.append(getSlots(1))
-    loot.append(getSlots(2))
+    loot.append(getSlots(1))
     loot.append(getSlots(2))
 
     for l in loot:

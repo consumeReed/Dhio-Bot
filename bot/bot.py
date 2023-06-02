@@ -189,6 +189,19 @@ def getItems0(substr):
             l.append([it['id'], formatItem(it['item_name']), it['amount']])
         return l
 
+    elif substr == 'weapon':
+        col = db['bank']
+        rec = col.find({'item_name': { '$regex': '.*of ashes.*'}}, {'_id': 0})
+        rec2 = col.find({'item_name': { '$regex': '.*of winter.*'}}, {'_id': 0})
+        rec3 = col.find({'item_name': { '$regex': '.*of earth.*'}}, {'_id': 0})
+        l = []
+        for it in rec:
+            l.append([it['id'], formatItem(it['item_name']), it['amount']])
+        for it in rec2:
+            l.append([it['id'], formatItem(it['item_name']), it['amount']])
+        for it in rec3:
+            l.append([it['id'], formatItem(it['item_name']), it['amount']])
+        return l
     else:
         col = db['bank']
         rec = col.find({'item_name': { '$regex': '.*'+substr.lower()+'.*'}}, {'_id': 0})
@@ -199,7 +212,7 @@ def getItems0(substr):
 
 def getLoot():
     bracelets = getItems0('bracelet')
-    weapons = getItems0('sworn')
+    weapons = getItems0('weapon')
     necklaces = getItems0('necklace')
 
     bracelets_s = []

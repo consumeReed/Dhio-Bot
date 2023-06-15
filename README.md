@@ -28,6 +28,7 @@ The Dhiothu Bot commands all use ! before each command. Use help while running f
 General usage
 * find - query database with item name or class
 * show/find - retrieve image of item based on item id
+* kill - simulates a Dhiothu kill
 
 Admin
 * update - Modify individual item quantities based on id

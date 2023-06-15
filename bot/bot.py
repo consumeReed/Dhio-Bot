@@ -5,6 +5,12 @@ import discord
 import pymongo
 from datetime import datetime
 from random import *
+import logging
+
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s %(levelname)s %(message)s",
+                    datefmt="%Y-%m-%d %H:%M:%S",
+                    filename="Logs.log")
 
 classes = ['mage', 'druid', 'warrior', 'rogue', 'ranger']
 
@@ -266,102 +272,139 @@ bot = commands.Bot(intents=discord.Intents.all(), command_prefix='!')
 
 @bot.command(name='kill', help='Kill a Dhiothu and see what loot you got!')
 async def kill(message):
-    loot = getLoot()
-    print(loot)
-    resp = str(message.author) + " killed a Dhiothu. Loot is: \n"
-    for i in loot:
-        resp+= '#' + str(i[0]) + ' ' + i[1] + "\n"
-    await message.send(resp)
+    try:
+        loot = getLoot()
+        #print(loot)
+        resp = str(message.author) + " killed a Dhiothu. Loot is: \n"
+        for i in loot:
+            resp+= '#' + str(i[0]) + ' ' + i[1] + "\n"
+        await message.send(resp)
+        logging.info("Successfully killed a dhiothu, user="+str(message.author)+", loot="+str(loot))
+    except:
+        logging.error("Error killing a dhiothu, user="+str(message.author))
 
 @bot.command(name='find', help='Search the available dhio items banked. Input either item name or class')
 async def bank(ctx, *, search):
-    db = client['dhio']
-    r = getItems(search)
-    resp = 'Bot Last Updated at '+ getDate() + "\n\n"
-    if(len(r) == 0):
-        resp += 'No Results'
-    for i in r:
-        resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
-    await ctx.send(resp)
+    try:
+        db = client['dhio']
+        r = getItems(search)
+        resp = 'Bot Last Updated at '+ getDate() + "\n\n"
+        if(len(r) == 0):
+            resp += 'No Results'
+        for i in r:
+            resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
+        await ctx.send(resp)
+        logging.info("Successfully fulfilled search, user="+str(ctx.author)+", query="+search)
+    except:
+        logging.error("Error while searching items, user="+str(ctx.author)+", query="+search)
 
 @bot.command(name='bt', help='Shows the good BT gear in bank :3')
 async def bt(ctx):
-    r = getBt()
-    resp = 'All the good BT items :3\n\n'
-    if(len(r)== 0):
-        resp+= 'No Results'
-    for i in r:
-        resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
-    await ctx.send(resp)
+    try:
+        r = getBt()
+        resp = 'All the good BT items :3\n\n'
+        if(len(r)== 0):
+            resp+= 'No Results'
+        for i in r:
+            resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
+        await ctx.send(resp)
+        logging.info("Successfully displayed bt items, user="+str(ctx.author))
+    except:
+        logging.error("Error displaying bt items, user="+str(ctx.author))
 
 
 @bot.command(name='show', help='Input item id to see stats as an image')
 async def im(ctx, search):
-    if str(search).isnumeric():
-        if int(search) < 518:
-            await ctx.send(file=discord.File('images/'+str(search)+'.PNG'))
+    try:
+        if str(search).isnumeric():
+            if int(search) < 518:
+                await ctx.send(file=discord.File('images/'+str(search)+'.PNG'))
+        logging.info("Successfully displayed image, user="+str(ctx.author)+", image #"+str(search))
+    except:
+        logging.error("Error displaying item image, user="+str(ctx.author)+", image #"+str(search))
 
 @bot.command(name='update')
 async def up(message, *, search):
-    if message.author == bot.user:
-        return
-    if message.author.id == 148113452534202368 or message.author.id == 336429699469279232 or message.author.id == 365440390200950786:
-        inp = str(search).split()
-        if int(inp[1]) < 0:
-            out = idToName(int(inp[0]))+ str(inp[1])
+    try:
+        if message.author == bot.user:
+            return
+        if message.author.id == 148113452534202368 or message.author.id == 336429699469279232 or message.author.id == 365440390200950786:
+            inp = str(search).split()
+            if int(inp[1]) < 0:
+                out = idToName(int(inp[0]))+ str(inp[1])
+            else:
+                out = idToName(int(inp[0]))+ '+'+ str(inp[1])
+            if int(inp[0]) < 299:
+                addToBank(int(inp[0]), int(inp[1]))
+                changeDate()
+                col = db['recent']
+                col.insert_one({ "id": int(inp[0]), "changed": int(inp[1])})
+                logging.info("Updated Dhiothu item, user="+str(message.author)+", query=["+search+"]")
+            else:
+                addToBt(int(inp[0]), int(inp[1]))
+                logging.info("Updated BT item, user="+str(message.author)+", query=["+search+"]")
+            await message.send(out)
         else:
-            out = idToName(int(inp[0]))+ '+'+ str(inp[1])
-        if int(inp[0]) < 299:
-            addToBank(int(inp[0]), int(inp[1]))
-            changeDate()
-            col = db['recent']
-            col.insert_one({ "id": int(inp[0]), "changed": int(inp[1])})
-        else:
-            addToBt(int(inp[0]), int(inp[1]))
-        await message.send(out)
+            await message.send('You are not eligible to update item quantities')
+            logging.warning("Unauthorized user tried to update items, user="+str(message.author))
+    except:
+        logging.error("Error updating item quantities, user="+str(message.author)+", query=["+search+"]")
 
 @bot.command(name='btids', help='Shows ids of BT items')
 async def u(ctx, search):
-    items = getBtIdsName(search)
-    resp = ''
-    for i in items:
-        resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
-    await ctx.send(resp)
-
-@bot.command(name='ids', help='Shows ids of Dhio items')
-async def i(ctx, search):
-    if search in classes:
-        items = getIds(search)
-        l = len(items)
-        k = 0
-        resp = ''
-        resp2 = ''
-        for i in items:
-            k+=1
-            if(k<l/2):
-                resp+= '#'+str(i[0]) + '  ' + i[1]+"\n"
-            else:
-                resp2+= '#'+str(i[0]) + '  ' + i[1]+"\n"
-        
-        await ctx.send(resp)
-        await ctx.send(resp2)
-    else:
-        items = getIdsName(search)
+    try:
+        items = getBtIdsName(search)
         resp = ''
         for i in items:
             resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
         await ctx.send(resp)
+        logging.info("Succesffully displayed bt ids list, user="+str(ctx.author)+", search="+search)
+    except:
+        logging.error("Error displaying bt ids list, user="+str(ctx.author)+", search="+search)
+
+@bot.command(name='ids', help='Shows ids of Dhio items')
+async def i(ctx, search):
+    try:
+        if search in classes:
+            items = getIds(search)
+            l = len(items)
+            k = 0
+            resp = ''
+            resp2 = ''
+            for i in items:
+                k+=1
+                if(k<l/2):
+                    resp+= '#'+str(i[0]) + '  ' + i[1]+"\n"
+                else:
+                    resp2+= '#'+str(i[0]) + '  ' + i[1]+"\n"
+            
+            await ctx.send(resp)
+            await ctx.send(resp2)
+            logging.info("Succesfully displayed dhiothu ids list by class, user"+str(ctx.author)+", class="+search)
+        else:
+            items = getIdsName(search)
+            resp = ''
+            for i in items:
+                resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
+            await ctx.send(resp)
+            logging.info("Successfully displayed dhiothu ids list, user="+str(ctx.author)+", search="+search)
+    except:
+        logging.error("Error displaying dhiothu ids list, user="+str(ctx.author)+", search="+search)
 
 @bot.command(name='recent', help='Shows the 10 most recently updated items')
 async def r(ctx):
-    resp = 'Recently Updated Items as of ' + getDate() + '\n\n'
-    rec = getRecent()
-    for r in rec:
-        resp+='#'+str(r[0])+' '+idToName(r[0])+ ' '
-        if r[1] >= 1:
-            resp+='+'+str(r[1])+'\n'
-        else:
-            resp+=str(r[1])+'\n'
-    await ctx.send(resp)
-    
+    try:
+        resp = 'Recently Updated Items as of ' + getDate() + '\n\n'
+        rec = getRecent()
+        for r in rec:
+            resp+='#'+str(r[0])+' '+idToName(r[0])+ ' '
+            if r[1] >= 1:
+                resp+='+'+str(r[1])+'\n'
+            else:
+                resp+=str(r[1])+'\n'
+        await ctx.send(resp)
+        logging.info('Succesfully displayed recent items, user='+str(ctx.author))
+    except:
+        logging.error('Error displaying recent items, user='+str(ctx.author))
+
 bot.run(TOKEN)

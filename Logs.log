@@ -1,0 +1,32 @@
+2023-06-14 21:39:18 WARNING PyNaCl is not installed, voice will NOT be supported
+2023-06-14 21:39:18 INFO logging in using static token
+2023-06-14 21:39:19 INFO Shard ID None has connected to Gateway (Session ID: 1aee7fb9e850cf994fecf1beb8283a7b).
+2023-06-14 21:39:22 INFO Successfully killed a dhiothu, user=consume_#0, loot=[[222, 'Majestic Aberrant Bracelet of Rapid Shot '], [197, 'Majestic Spectral Bracelet of Shadowstrike '], [157, 'Majestic Eidolic Necklace of Flames ']]
+2023-06-14 21:39:31 INFO Successfully fulfilled search, user=consume_#0, query=flames
+2023-06-14 21:39:37 INFO Successfully fulfilled search, user=consume_#0, query=e
+2023-06-14 21:39:50 INFO Successfully fulfilled search, user=consume_#0, query=warrior
+2023-06-14 21:40:04 INFO Successfully displayed bt items, user=consume_#0
+2023-06-14 21:40:17 ERROR Error displaying item image, user=consume_#0, image #293
+2023-06-14 21:40:43 INFO Updated Dhiothu item, user=consume_#0, query=[293 1]
+2023-06-14 21:40:53 INFO Updated Dhiothu item, user=consume_#0, query=[293 -1]
+2023-06-14 21:41:00 ERROR Error updating item quantities, user=consume_#0, query=[78787 1]
+2023-06-14 21:41:15 ERROR Ignoring exception in command btids
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1015, in invoke
+    await self.prepare(ctx)
+  File "C:\Python311\Lib\site-packages\discord\ext\commands\core.py", line 932, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Python311\Lib\site-packages\discord\ext\commands\core.py", line 839, in _parse_arguments
+    transformed = await self.transform(ctx, param, attachments)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\discord\ext\commands\core.py", line 691, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: search is a required argument that is missing.
+2023-06-14 21:41:24 ERROR Error displaying bt ids list, user=consume_#0, search=i
+2023-06-14 21:41:38 INFO Succesffully displayed bt ids list, user=consume_#0, search=trans
+2023-06-14 21:41:51 INFO Successfully displayed dhiothu ids list, user=consume_#0, search=flames
+2023-06-14 21:41:57 INFO Successfully displayed dhiothu ids list, user=consume_#0, search=majestic
+2023-06-14 21:42:00 ERROR Error displaying dhiothu ids list, user=consume_#0, search=e
+2023-06-14 21:42:11 INFO Succesfully displayed recent items, user=consume_#0

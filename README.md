@@ -18,7 +18,7 @@ Dependencies and Requirements
 
 Creating database, downloading assets, and starting bot
 * Run makedb.py and then fix_db.py with a valid MongoDB database connection
-* Run get_items.py to download each Dhiothu loot image locally
+* Run get_items.py to download each Dhiothu, Bloodthorn, Hrungnir loot image locally
 * Change the .env file to a valid Discord Bot Authentication Token
 * Run bot.py to start bot
 
@@ -28,16 +28,11 @@ The Dhiothu Bot commands all use ! before each command. Use help while running f
 General usage
 * find - query database with item name or class
 * show/find - retrieve image of item based on item id
+* bt - show all Bloodthorn items
+* hrung - query database with item name or class
 
 Admin
 * update - Modify individual item quantities based on id
-
-### Roadmap
-
--  Fixes to text output
--  Send message to embedded message in Discord channels
--  Allow for recent Dhiothu kills to be posted, viewed, and modified
--  Add more users to have admin privileges
 
 
 ### Status

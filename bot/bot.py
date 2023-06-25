@@ -71,7 +71,45 @@ def getBtIdsName(it):
     for it in rec:
         l.append([it['id'], it['item_name']])
     return l
+
+
+def addToHrung(item, v):
+    col = db['hrung']
+    col.update_one(
+        {'id': item},
+        {'$inc': {'amount': int(v)}}
+    )
+
+
+def getHrungIdsName(it):
+    col = db['hrung']
+    rec = col.find({'item_name': { '$regex': '.*'+it.lower()+'.*'}}, {'_id': 0})
+    l = []
+    for it in rec:
+        l.append([it['id'], it['item_name']])
+    return l
     
+def getHrungItems(substr):
+
+    if substr.lower() in classes or substr.lower() == 'hotswap': 
+        col = db['hrung']
+        rec = col.find({'class': substr.lower()}, {'_id': 0})
+        l = []
+        for it in rec:
+            if(it['amount']> 0):
+                l.append([it['id'], formatItem(it['item_name']), it['amount']])
+        return l
+
+    else:
+        col = db['hrung']
+        rec = col.find({'item_name': { '$regex': '.*'+substr.lower()+'.*'}}, {'_id': 0})
+        l = []
+        for it in rec:
+            if(it['amount']> 0):
+                l.append([it['id'], formatItem(it['item_name']), it['amount']])
+        return l
+
+
 def getDate():
     col = db['date']
     r = col.find({'id': 1})
@@ -312,12 +350,26 @@ async def bt(ctx):
     except:
         logging.error("Error displaying bt items, user="+str(ctx.author))
 
+@bot.command(name='hippo', help='Search the available Hrung items banked. Input either item name or class or "hotswap" to see dmg rings')
+async def bank(ctx, *, search):
+    try:
+        db = client['hrung']
+        r = getHrungItems(search)
+        resp = 'Bot Last Updated at '+ getDate() + "\n\n"
+        if(len(r) == 0):
+            resp += 'No Results'
+        for i in r:
+            resp += "#"+ str(i[0]) +" " + i[1] + "   "  + str(i[2])  +  "\n"
+        await ctx.send(resp)
+        logging.info("Successfully fulfilled hrung search, user="+str(ctx.author)+", query="+search)
+    except:
+        logging.error("Error while searching hrung items, user="+str(ctx.author)+", query="+search)
 
 @bot.command(name='show', help='Input item id to see stats as an image')
 async def im(ctx, search):
     try:
         if str(search).isnumeric():
-            if int(search) < 518:
+            if int(search) < 914:
                 await ctx.send(file=discord.File('images/'+str(search)+'.PNG'))
         logging.info("Successfully displayed image, user="+str(ctx.author)+", image #"+str(search))
     except:
@@ -340,9 +392,13 @@ async def up(message, *, search):
                 col = db['recent']
                 col.insert_one({ "id": int(inp[0]), "changed": int(inp[1])})
                 logging.info("Updated Dhiothu item, user="+str(message.author)+", query=["+search+"]")
-            else:
+            elif int(inp[0]) >= 299 and int(inp[0] < 518):
                 addToBt(int(inp[0]), int(inp[1]))
                 logging.info("Updated BT item, user="+str(message.author)+", query=["+search+"]")
+            else:
+                addToHrung(int(inp[0]), int(inp[1]))
+                changeDate()
+                logging.info("Updated Hrung item, user="+str(message.author)+", query=["+search+"]")
             await message.send(out)
         else:
             await message.send('You are not eligible to update item quantities')
@@ -361,6 +417,18 @@ async def u(ctx, search):
         logging.info("Succesffully displayed bt ids list, user="+str(ctx.author)+", search="+search)
     except:
         logging.error("Error displaying bt ids list, user="+str(ctx.author)+", search="+search)
+
+@bot.command(name='hrungids', help='Shows ids of Hrung items')
+async def u(ctx, search):
+    try:
+        items = getHrungIdsName(search)
+        resp = ''
+        for i in items:
+            resp+='#'+str(i[0]) + '  ' + i[1]+'\n'
+        await ctx.send(resp)
+        logging.info("Succesffully displayed hrung ids list, user="+str(ctx.author)+", search="+search)
+    except:
+        logging.error("Error displaying hrung ids list, user="+str(ctx.author)+", search="+search)
 
 @bot.command(name='ids', help='Shows ids of Dhio items')
 async def i(ctx, search):

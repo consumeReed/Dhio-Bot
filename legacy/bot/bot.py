@@ -298,10 +298,7 @@ def getLoot():
                 random = randint(0, len(bracelets_s)-1)
                 loot_names.append(bracelets_s[random])
     
-    return loot_names
-
-
-            
+    return loot_names            
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')

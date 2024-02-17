@@ -21,3 +21,7 @@ print(extract_substring(general_mord))
 print(extract_substring(mord_spear))
 print(extract_substring(mord_grim))
 print(extract_substring(gele_axe))
+
+parsed = '1,2,3'
+list = [int(i) for i in parsed.split(',')]
+print(list)

@@ -76,7 +76,7 @@ dhio_items = []
 with open('db/dhio_items.json') as f:
     dhio_items = json.load(f)
 for i in dhio_items:
-    entry = { "item_name": i[0].lower(), "db_id": i[1], "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "dhiothu"}
+    entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": i[1], "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "dhiothu"}
     col.insert_one(entry)
     id+=1
 
@@ -84,7 +84,7 @@ hrung_items = []
 with open('db/hrung_items.json') as f:
     hrung_items = json.load(f)
 for i in hrung_items:
-    entry = { "item_name": i[0].lower(), "db_id": int(i[1]), "amount": 0, "id": id, "class": determine_class(i[0].lower(), 1), "bank": "hrungnir"}
+    entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": determine_class(i[0].lower(), 1), "bank": "hrungnir"}
     col.insert_one(entry)
     id+=1
 
@@ -92,7 +92,7 @@ bt_items = []
 with open('db/bloodthorn_items.json') as f:
     bt_items = json.load(f)
 for i in bt_items:
-    entry = { "item_name": i[0].lower(), "db_id": int(i[1]), "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "bloodthron"}
+    entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "bloodthorn"}
     col.insert_one(entry)
     id+=1
 
@@ -100,7 +100,7 @@ gele_items = []
 with open('db/gelebron_items.json') as f:
     gele_items = json.load(f)
 for i in gele_items:
-    entry = { "item_name": i[0].lower(), "db_id": int(i[1]), "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "gelebron"}
+    entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "gelebron"}
     col.insert_one(entry)
     id+=1
 
@@ -109,9 +109,9 @@ with open('db/mordris_items.json') as f:
     mordris_items = json.load(f)
 for i in mordris_items:
     if i[2] != '':
-        entry = { "item_name": i[0].lower(), "db_id": int(i[1]), "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "mordris"}
+        entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": [int(k) for k in i[2].split(',')], "bank": "mordris"}
     else:
-        entry = { "item_name": i[0].lower(), "db_id": int(i[1]), "amount": 0, "id": id, "class": [6], "bank": "mordris"}
+        entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": [6], "bank": "mordris"}
     col.insert_one(entry)
     id+=1
 
@@ -119,6 +119,6 @@ prot_items = []
 with open('db/proteus_items.json') as f:
     prot_items = json.load(f)
 for i in bt_items:
-    entry = { "item_name": i[0].lower(), "db_id": int(i[1]), "amount": 0, "id": id, "class": determine_class(i[0].lower(), 2), "bank": "proteus"}
+    entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": determine_class(i[0].lower(), 2), "bank": "proteus"}
     col.insert_one(entry)
     id+=1

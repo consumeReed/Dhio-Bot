@@ -40,23 +40,23 @@ def get_items_formatted(search, bank_type):
     col = db['bank']
     items = []
     if search.lower() in classes:
-        items = get_items_class(classes[search.lower()], bank_type)
+        items = list(get_items_class(classes[search.lower()], bank_type))
     else:
-        items = get_items_name(search, bank_type)
+        items = list(get_items_name(search, bank_type))
     response = 'Bot Last Updated at ' + '\n\n'
     if len(items) == 0:
         response+='No Results'
     else:
         for item in items:
-            response+='#' + format_item(str(item['id'])) + " " + str(item['amount'])
+            response+='#' + str(item['id']) + ' ' + format_item(id_to_name(int(item['id']))) + "  " + str(item['amount'])+'\n'
     return response
         
 
 
 def id_to_name(item_id):
     col = db['bank']
-    query = col.find({'id': id}, {'_id': 0})
-    return query[0]['item_name']
+    query = col.find_one({'id': item_id}, {'_id': 0})
+    return query['item_name']
 
 def update_item_amount(item_id, modifier):
     col = db['bank']
@@ -76,25 +76,31 @@ def get_recently_updated():
 
 def get_is_active(bank_name):
     col = db['active']
-    query = col.find({'bank_id': bank_name})
+    query = col.find_one({'bank_id': bank_name})
     return query['on']
 
 def set_active(bank_name, on):
     col = db['active']
-    col.update_one({'bank_id': bank_name}, {'on': on})
+    col.update_one({'bank_id': bank_name}, {'$set': {'on': on}})
 
 def get_active():
     col = db['active']
-    return col.find()
+    query = col.find()
+    print(query)
+    return query
 
 def get_privilege_users(privilege_level):
     col = db['users']
     query = col.find({'privilege': {'$gte': privilege_level}})
     return query
 
-def update_privilege(discord_id, privilege_level):
+async def update_privilege(discord_id, privilege_level, discord_name):
     col = db['users']
-    col.update_one({'discord_id': discord_id}, {'privilege': privilege_level})
+    query = col.find_one({'discord_id': discord_id})
+    if query == None:
+        col.insert_one({'discord_id': discord_id, 'discord_name': discord_name, 'privilege_level': privilege_level, 'queries': 0, 'image_queries': 0})
+    else:
+        col.update_one({'discord_id': discord_id}, {'$set': {'privilege': privilege_level}})
 
 def update_query(discord_id):
     col = db['users']
@@ -105,10 +111,18 @@ def update_image_queries(discord_id):
     col.update_one({'discord_id': discord_id}, {'$inc': {'image_queries': 1}})
 
 def get_statistics(discord_id):
+    queries = [0,0]
     col = db['users']
     if discord_id == -1:
         query = col.find()
-        #cont
+        for user in query:
+            queries[0]=queries[0]+user['queries']
+            queries[1]=queries[1]+user['image_queries']
+    else:
+        query = col.find_one({'discord_id': discord_id})
+        queries[0]=query['queries']
+        queries[1]=query['image_queries']
+    return queries
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -117,11 +131,11 @@ bot = commands.Bot(intents=discord.Intents.all(), command_prefix='!')
 
 @bot.command(name='kill', help='Kill a Dhiothu and see what loot you got!')
 async def kill(message):
-    message.send('This command has been discontinued.')
+    await message.send('This command has been discontinued.')
 
 @bot.command(name='find', help='Search the available Dhiothu items banked. Input either item name or class')
 async def find(message):
-    message.send('This command has been discontinued.'
+    await message.send('This command has been discontinued.'
                  +'\nUse bank specific commands:'
                  +'\n!dhio, !hippo, !prot,'
                  +'\n!mord, !bt, !gele')
@@ -139,53 +153,57 @@ async def show(ctx, search):
 @bot.command(name='update', help='Update quantities of items in bank')
 async def update(message, *, search):
     try:
-        message_author = message.author
+        message_author = message.author.id
         if message_author == bot.user:
             return
         for user in get_privilege_users(1):
-            if user['discord_id'] == message_author:
+            if float(user['discord_id']) == message_author:
                 inputs = str(search).split()
                 modifer = '+'
                 if int(inputs[1]) < 0:
                     modifer = ''
-                update_item_amount(int(inputs[0], int(inputs[1])))
+                update_item_amount(int(inputs[0]), int(inputs[1]))
                 logging.info("Updated bank item, user="+str(message.author)+", query=["+search+"]")
-                await message.send(id_to_name(int(inputs[0]))+' '+modifer+str(inputs[1]))
+                await message.send(format_item(id_to_name(int(inputs[0])))+' '+modifer+str(inputs[1]))
                 return
         await message.send('You are not eligible to use the update command')
         logging.warning("Unauthorized user tried to update items, user="+str(message.author))
-    except:
+    except Exception as e:
+        print(e)
         logging.error("Error updating item quantities, user="+str(message.author)+", query=["+search+"]")
         await message.send('Error updating item quantities')
 
 @bot.command(name='privilege', help='Update the privilege level of a user')
 async def privilege(message, *, search):
-    try:
-        message_author = message.author
+    #try:
+        message_author = message.author.id
         if message_author == bot.user:
             return
         for user in get_privilege_users(2):
-            if user['discord_id'] == message_author:
+            if float(user['discord_id']) == message_author:
                 inputs = str(search).split()
-                update_privilege(float(inputs[0]), int(inputs[1]))
-                message.send('Successfully updated privilege for ' + await client.fetch(float(inputs[0])) + ' to level ' + str(inputs[1]))
-                logging.info('Updated user '+ str(inputs[0]) + ' to level ' + str(inputs[1]) + ' by ' + message.author)
-    except:
-        logging.info('Error updating privilege level')
+                name = await bot.fetch_user(int(inputs[0]))
+                await update_privilege(float(inputs[0]), int(inputs[1]), str(name))
+                await message.send('Successfully updated privilege for ' + str(name) + ' to level ' + str(inputs[1]))
+                logging.info('Updated user '+ str(inputs[0]) + ' to level ' + str(inputs[1]) + ' by ' + str(message.author))
+    #except:
+    #    logging.info('Error updating privilege level')
 
 @bot.command(name='privilege_list', help='Get list of privileged users')
 async def privilege_list(message):
     try:
-        message_author = message.author
+        message_author = message.author.id
         if message_author == bot.user:
             return
+        response = "Users and their privilege level:\n"
         for user in get_privilege_users(2):
-            if user['discord_id'] == message_author:
-                response = "Users and their privilege level:\n"
+            if float(user['discord_id']) == message_author:
                 privilege_list = get_privilege_users(1)
                 for user in privilege_list:
-                    response+=await client.fetch(user['discord_id']) + ' is level ' + user['privilege']
+                    tmp_user = await bot.fetch_user(int(user['discord_id']))
+                    response+=str(tmp_user) + ' is level ' + str(user['privilege']) + '\n'
             await message.send(response)
+            break
     except:
         logging.error('Error displaying privilege list')
 
@@ -236,3 +254,5 @@ async def find(ctx, *, search):
     else:
         await ctx.send('Dhiothu bank is disabled currently')
     logging.info("Successfully fulfilled dhio search, user="+str(ctx.author)+", query="+search)
+
+bot.run(TOKEN)

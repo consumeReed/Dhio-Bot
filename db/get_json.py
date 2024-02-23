@@ -1,5 +1,4 @@
 import re
-import requests
 import json
 
 all_items = []
@@ -30,7 +29,7 @@ for i in all_items:
         bloodthorn.append([name, id, extract_class(i)])
     elif 'Hrungnir' in i and 'Iceband' not in i and 'Fireband' not in i and 'Bangle' not in i:
         hrungnir.append([name, id, extract_class(i)])
-    elif 'Abyssal' and 'Mordris' in i and 'TEST' not in i and 'OVERWRITE' not in i and 'Chocolate' not in i or 'scale' and 'Mordris' in i and 'TEST' not in i and 'OVERWRITE' not in i and 'Chocolate' not in i:
+    elif 'Abyssal' and 'Mordris' in i and 'TEST' not in i and 'OVERWRITE' not in i and 'Chocolate' not in i or 'scale' and 'Mordris' in i and 'TEST' not in i and 'OVERWRITE' not in i and 'Chocolate' not in i or 'Halberd' in i:
         mordris.append([name, id, extract_class(i)])
     elif 'Aetheric' in i and 'crafted' not in i and 'Cuhcullain' not in i and 'Fingal' not in i and 'Myrine' not in i and 'Myrrdin' not in i and 'Dian' not in i:
         gelebron.append([name, id, extract_class(i)])

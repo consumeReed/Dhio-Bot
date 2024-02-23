@@ -30,3 +30,1796 @@ discord.ext.commands.errors.MissingRequiredArgument: search is a required argume
 2023-06-14 21:41:57 INFO Successfully displayed dhiothu ids list, user=consume_#0, search=majestic
 2023-06-14 21:42:00 ERROR Error displaying dhiothu ids list, user=consume_#0, search=e
 2023-06-14 21:42:11 INFO Succesfully displayed recent items, user=consume_#0
+2024-02-19 19:03:32 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:03:53 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:06:19 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:14:08 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:14:52 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:14:52 INFO logging in using static token
+2024-02-19 19:14:53 INFO Shard ID None has connected to Gateway (Session ID: 29273131ab7cd12ddbee4699c8b151cc).
+2024-02-19 19:16:00 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:16:00 INFO logging in using static token
+2024-02-19 19:16:01 INFO Shard ID None has connected to Gateway (Session ID: 61f06b937cf6c0c7187dc42f5d0476e7).
+2024-02-19 19:16:35 ERROR Error displaying item image, user=consume_, image #1
+2024-02-19 19:16:54 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 202, in find
+    if get_is_active('bloodthorn'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 80, in get_is_active
+    return query['on']
+           ~~~~~^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 770, in __getitem__
+    raise TypeError("index %r cannot be applied to Cursor instances" % index)
+TypeError: index 'on' cannot be applied to Cursor instances
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: index 'on' cannot be applied to Cursor instances
+2024-02-19 19:18:29 ERROR Error displaying privilege list
+2024-02-19 19:19:19 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:19:19 INFO logging in using static token
+2024-02-19 19:19:19 INFO Shard ID None has connected to Gateway (Session ID: fa2f5940c58c432a4e818c26cdf5b654).
+2024-02-19 19:19:25 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 203, in find
+    if get_is_active('bloodthorn'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 81, in get_is_active
+    return query['on']
+           ~~~~~^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 770, in __getitem__
+    raise TypeError("index %r cannot be applied to Cursor instances" % index)
+TypeError: index 'on' cannot be applied to Cursor instances
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: index 'on' cannot be applied to Cursor instances
+2024-02-19 19:21:01 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:21:01 INFO logging in using static token
+2024-02-19 19:21:01 INFO Shard ID None has connected to Gateway (Session ID: e38dbdee9f318be9b7857154df463586).
+2024-02-19 19:21:10 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 205, in find
+    if get_is_active('bloodthorn'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 81, in get_is_active
+    return query['on']
+           ~~~~~^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 770, in __getitem__
+    raise TypeError("index %r cannot be applied to Cursor instances" % index)
+TypeError: index 'on' cannot be applied to Cursor instances
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: index 'on' cannot be applied to Cursor instances
+2024-02-19 19:22:26 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:22:26 INFO logging in using static token
+2024-02-19 19:22:26 INFO Shard ID None has connected to Gateway (Session ID: 8112e9ccd5c687d5a53c415bc32f369c).
+2024-02-19 19:22:33 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 206, in find
+    await ctx.send(get_items_formatted(search, 'bloodthorn'))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 47, in get_items_formatted
+    if len(items) == 0:
+       ^^^^^^^^^^
+TypeError: object of type 'Cursor' has no len()
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: object of type 'Cursor' has no len()
+2024-02-19 19:23:07 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:23:07 INFO logging in using static token
+2024-02-19 19:23:08 INFO Shard ID None has connected to Gateway (Session ID: a19937a1df542a2488b5abf4a705cd7e).
+2024-02-19 19:23:13 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 206, in find
+    await ctx.send(get_items_formatted(search, 'bloodthorn'))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 47, in get_items_formatted
+    if len(items) == 0:
+       ^^^^^^^^^^
+TypeError: object of type 'Cursor' has no len()
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: object of type 'Cursor' has no len()
+2024-02-19 19:26:35 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:26:35 INFO logging in using static token
+2024-02-19 19:26:36 INFO Shard ID None has connected to Gateway (Session ID: 5e25855796854853dd314544b07e3e87).
+2024-02-19 19:26:42 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:27:34 WARNING Unauthorized user tried to update items, user=consume_
+2024-02-19 19:28:55 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:28:55 INFO logging in using static token
+2024-02-19 19:28:56 INFO Shard ID None has connected to Gateway (Session ID: e86d8c4b15eedaf36ec349b45f9fd59f).
+2024-02-19 19:29:03 ERROR Error updating item quantities, user=consume_, query=[721 1]
+2024-02-19 19:30:08 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:30:08 INFO logging in using static token
+2024-02-19 19:30:09 INFO Shard ID None has connected to Gateway (Session ID: f1b263b8f71d3a7dbbf529432e91e11c).
+2024-02-19 19:30:14 ERROR Error updating item quantities, user=consume_, query=[721 1]
+2024-02-19 19:31:39 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:31:39 INFO logging in using static token
+2024-02-19 19:31:40 INFO Shard ID None has connected to Gateway (Session ID: a636e5032feb3500de97ada0835b6c56).
+2024-02-19 19:31:46 ERROR Error updating item quantities, user=consume_, query=[721 1]
+2024-02-19 19:33:15 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:33:15 INFO logging in using static token
+2024-02-19 19:33:16 INFO Shard ID None has connected to Gateway (Session ID: 10f792d661d61dac43860e1006e3c639).
+2024-02-19 19:33:24 WARNING Unauthorized user tried to update items, user=consume_
+2024-02-19 19:34:07 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:34:07 INFO logging in using static token
+2024-02-19 19:34:08 INFO Shard ID None has connected to Gateway (Session ID: 63c80b64ccd3ea11961161db0e756443).
+2024-02-19 19:34:15 ERROR Ignoring exception in command update
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 158, in update
+    if float(user['discord_id']) == float(message_author):
+                                    ^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'Member'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: float() argument must be a string or a real number, not 'Member'
+2024-02-19 19:35:46 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:35:46 INFO logging in using static token
+2024-02-19 19:35:47 INFO Shard ID None has connected to Gateway (Session ID: 35678491a79303a05bb71da1464624c5).
+2024-02-19 19:35:55 WARNING Unauthorized user tried to update items, user=consume_
+2024-02-19 19:36:58 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:36:58 INFO logging in using static token
+2024-02-19 19:36:58 INFO Shard ID None has connected to Gateway (Session ID: e7003a46f34b7dd36a08025aa20475cd).
+2024-02-19 19:37:04 ERROR Ignoring exception in command update
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 163, in update
+    update_item_amount(int(inputs[0], int(inputs[1])))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: int() base must be >= 2 and <= 36, or 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: int() base must be >= 2 and <= 36, or 0
+2024-02-19 19:38:07 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:38:07 INFO logging in using static token
+2024-02-19 19:38:08 INFO Shard ID None has connected to Gateway (Session ID: ab80eb48d56800262ef48e82923c30b9).
+2024-02-19 19:38:13 ERROR Ignoring exception in command update
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 164, in update
+    update_item_amount(int(inputs[0], int(inputs[1])))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: int() base must be >= 2 and <= 36, or 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: int() base must be >= 2 and <= 36, or 0
+2024-02-19 19:38:42 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:38:42 INFO logging in using static token
+2024-02-19 19:38:43 INFO Shard ID None has connected to Gateway (Session ID: 81c7c42fef98ecea4e42f45a2b3f5403).
+2024-02-19 19:38:47 INFO Updated bank item, user=consume_, query=[721 1]
+2024-02-19 19:38:47 ERROR Ignoring exception in command update
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 166, in update
+    await message.send(id_to_name(int(inputs[0]))+' '+modifer+str(inputs[1]))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 59, in id_to_name
+    return query[0]['item_name']
+           ~~~~~^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 767, in __getitem__
+    for doc in clone:
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2445, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\server.py", line 130, in run_operation
+    message = operation.get_message(read_preference, conn, use_cmd)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 426, in get_message
+    request_id, msg, size, _ = _op_msg(
+                               ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <built-in function id>, of type: <class 'builtin_function_or_method'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <built-in function id>, of type: <class 'builtin_function_or_method'>
+2024-02-19 19:40:55 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:40:55 INFO logging in using static token
+2024-02-19 19:40:56 INFO Shard ID None has connected to Gateway (Session ID: 6841437fe81f40b337235045dce1460a).
+2024-02-19 19:41:02 INFO Updated bank item, user=consume_, query=[721 1]
+2024-02-19 19:41:02 ERROR Ignoring exception in command update
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 163, in update
+    await message.send(id_to_name(int(inputs[0]))+' '+modifer+str(inputs[1]))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 58, in id_to_name
+    query = col.find_one({'id': id}, {'_id': 0})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2445, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\server.py", line 130, in run_operation
+    message = operation.get_message(read_preference, conn, use_cmd)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 426, in get_message
+    request_id, msg, size, _ = _op_msg(
+                               ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <built-in function id>, of type: <class 'builtin_function_or_method'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <built-in function id>, of type: <class 'builtin_function_or_method'>
+2024-02-19 19:41:27 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:41:27 INFO logging in using static token
+2024-02-19 19:41:27 INFO Shard ID None has connected to Gateway (Session ID: 32031fdc57e7d2aa16f4b606f134a42f).
+2024-02-19 19:41:31 INFO Updated bank item, user=consume_, query=[721 1]
+2024-02-19 19:41:41 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:41:50 INFO Successfully fulfilled bt search, user=consume_, query=mage
+2024-02-19 19:43:24 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:43:24 INFO logging in using static token
+2024-02-19 19:43:25 INFO Shard ID None has connected to Gateway (Session ID: afa72a8d309ba9706411e01b63bdd214).
+2024-02-19 19:43:30 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:43:34 INFO Updated bank item, user=consume_, query=[721 1]
+2024-02-19 19:43:38 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:45:13 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:45:13 INFO logging in using static token
+2024-02-19 19:45:14 INFO Shard ID None has connected to Gateway (Session ID: 060b23a20e212237f1e862a2d7ae070a).
+2024-02-19 19:45:19 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:47:51 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:47:51 INFO logging in using static token
+2024-02-19 19:47:52 INFO Shard ID None has connected to Gateway (Session ID: 93325b3848f111952ffc7083fbf122dc).
+2024-02-19 19:47:55 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:47:59 INFO Successfully fulfilled bt search, user=consume_, query=mage
+2024-02-19 19:48:08 INFO Updated bank item, user=consume_, query=[721 1]
+2024-02-19 19:48:42 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:48:42 INFO logging in using static token
+2024-02-19 19:48:43 INFO Shard ID None has connected to Gateway (Session ID: 2e4c82de8468893879bd1e1047ce107d).
+2024-02-19 19:48:49 INFO Updated bank item, user=consume_, query=[721 1]
+2024-02-19 19:48:55 INFO Successfully fulfilled bt search, user=consume_, query=mage
+2024-02-19 19:49:00 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-19 19:49:10 INFO Updated bank item, user=consume_, query=[1 1]
+2024-02-19 19:49:15 INFO Successfully fulfilled dhio search, user=consume_, query=hammer
+2024-02-19 19:49:17 INFO Successfully fulfilled dhio search, user=consume_, query=warrior
+2024-02-19 19:50:58 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:50:58 INFO logging in using static token
+2024-02-19 19:50:58 INFO Shard ID None has connected to Gateway (Session ID: c5bfea78b8eeeb5c56a387e16d27f948).
+2024-02-19 19:51:03 INFO Updated bank item, user=consume_, query=[2 1]
+2024-02-19 19:51:08 INFO Successfully fulfilled dhio search, user=consume_, query=warrior
+2024-02-19 19:51:39 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:51:39 INFO logging in using static token
+2024-02-19 19:51:39 INFO Shard ID None has connected to Gateway (Session ID: 8163b06bce6f9b600119345a89fa7990).
+2024-02-19 19:51:46 INFO Successfully fulfilled dhio search, user=consume_, query=hammer
+2024-02-19 19:51:49 INFO Successfully fulfilled dhio search, user=consume_, query=ash
+2024-02-19 19:52:15 ERROR Error displaying privilege list
+2024-02-19 19:52:50 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:52:50 INFO logging in using static token
+2024-02-19 19:52:50 INFO Shard ID None has connected to Gateway (Session ID: 86a1d8af6877f2a1d46c2005b59bb1b9).
+2024-02-19 19:52:59 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 199, in privilege_list
+    await message.send(response)
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2024-02-19 19:53:40 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:53:40 INFO logging in using static token
+2024-02-19 19:53:40 INFO Shard ID None has connected to Gateway (Session ID: 58720c54529e8ff6f8dd62c52ae5fd97).
+2024-02-19 19:55:08 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:55:08 INFO logging in using static token
+2024-02-19 19:55:12 INFO Shard ID None has connected to Gateway (Session ID: 95ade63424dbb9b5a626c9512b25dcf4).
+2024-02-19 19:55:14 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 198, in privilege_list
+    response+=await client.fetch(user['discord_id']) + ' is level ' + user['privilege']
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Database' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'Database' object is not callable
+2024-02-19 19:56:39 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:56:39 INFO logging in using static token
+2024-02-19 19:56:40 INFO Shard ID None has connected to Gateway (Session ID: 9559c8dce367ee77a27ab0e6085cda45).
+2024-02-19 19:56:48 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 198, in privilege_list
+    tmp_user = client.fetch(float(user['discord_id']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Database' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'Database' object is not callable
+2024-02-19 19:57:11 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:57:11 INFO logging in using static token
+2024-02-19 19:57:11 INFO Shard ID None has connected to Gateway (Session ID: 4079189282cc4ee7a3853f2e1587bb82).
+2024-02-19 19:57:17 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 199, in privilege_list
+    tmp_user = client.fetch(float(user['discord_id']))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Database' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'Database' object is not callable
+2024-02-19 19:59:14 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 19:59:14 INFO logging in using static token
+2024-02-19 19:59:15 INFO Shard ID None has connected to Gateway (Session ID: a22b81d93e08cf4fe2eec08611f4b36b).
+2024-02-19 19:59:17 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 198, in privilege_list
+    tmp_user = await client.fetch_user(float(user['discord_id']))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Database' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'Database' object is not callable
+2024-02-19 20:01:15 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:01:15 INFO logging in using static token
+2024-02-19 20:01:15 INFO Shard ID None has connected to Gateway (Session ID: adf87a24b1674f86c968002dce9495e0).
+2024-02-19 20:01:18 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 200, in privilege_list
+    response+=tmp_user + ' is level ' + user['privilege'] + '\n'
+              ~~~~~~~~~^~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'User' and 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: unsupported operand type(s) for +: 'User' and 'str'
+2024-02-19 20:01:46 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:01:46 INFO logging in using static token
+2024-02-19 20:01:47 INFO Shard ID None has connected to Gateway (Session ID: e3bffdefbab4ee5d4e92bd797629d51c).
+2024-02-19 20:01:49 ERROR Ignoring exception in command privilege_list
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 199, in privilege_list
+    response+=str(tmp_user) + ' is level ' + user['privilege'] + '\n'
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: can only concatenate str (not "int") to str
+2024-02-19 20:02:24 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:02:24 INFO logging in using static token
+2024-02-19 20:02:25 INFO Shard ID None has connected to Gateway (Session ID: 4ac52f450d668442f6856f9d2b4dc55b).
+2024-02-19 20:03:00 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:03:00 INFO logging in using static token
+2024-02-19 20:03:00 INFO Shard ID None has connected to Gateway (Session ID: f1c624e61f603201eaf6382769b7a00d).
+2024-02-19 20:04:13 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:04:13 INFO logging in using static token
+2024-02-19 20:04:14 INFO Shard ID None has connected to Gateway (Session ID: 19ab03f3e29b843c114dde024234afd8).
+2024-02-19 20:04:38 INFO Error updating privilege level
+2024-02-19 20:05:12 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:05:12 INFO logging in using static token
+2024-02-19 20:05:13 INFO Shard ID None has connected to Gateway (Session ID: e94dd92b3dd1fac5e06c192d866a8e27).
+2024-02-19 20:05:20 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 181, in privilege
+    update_privilege(float(inputs[0]), int(inputs[1]))
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 99, in update_privilege
+    col.update_one({'discord_id': discord_id}, {'privilege': privilege_level})
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1081, in update_one
+    common.validate_ok_for_update(update)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\common.py", line 618, in validate_ok_for_update
+    raise ValueError("update only works with $ operators")
+ValueError: update only works with $ operators
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: update only works with $ operators
+2024-02-19 20:57:31 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:57:31 INFO logging in using static token
+2024-02-19 20:57:31 INFO Shard ID None has connected to Gateway (Session ID: 14ca17f781217f20bb3aee0bd0917baf).
+2024-02-19 20:57:35 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 182, in privilege
+    await message.send('Successfully updated privilege for ' + await bot.fetch_user(int(inputs[0])) + ' to level ' + str(inputs[1]))
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "User") to str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: can only concatenate str (not "User") to str
+2024-02-19 20:58:43 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 20:58:43 INFO logging in using static token
+2024-02-19 20:58:44 INFO Shard ID None has connected to Gateway (Session ID: 3ac759d2dbd79864b6c1b6cc7ee52f41).
+2024-02-19 20:58:50 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-19 21:05:07 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:05:07 INFO logging in using static token
+2024-02-19 21:05:08 INFO Shard ID None has connected to Gateway (Session ID: a1457f1421e089eb3d0e8cbcdf8fcaec).
+2024-02-19 21:05:13 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-19 21:05:42 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:05:42 INFO logging in using static token
+2024-02-19 21:05:43 INFO Shard ID None has connected to Gateway (Session ID: c08588342c983b3a573fe6c1072e469b).
+2024-02-19 21:05:47 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 185, in privilege
+    await update_privilege(float(inputs[0]), int(inputs[1]))
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 99, in update_privilege
+    if col.find_one({'discord_id'}) is None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2445, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\server.py", line 130, in run_operation
+    message = operation.get_message(read_preference, conn, use_cmd)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 426, in get_message
+    request_id, msg, size, _ = _op_msg(
+                               ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: {'discord_id'}, of type: <class 'set'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: {'discord_id'}, of type: <class 'set'>
+2024-02-19 21:07:01 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:07:01 INFO logging in using static token
+2024-02-19 21:07:03 INFO Shard ID None has connected to Gateway (Session ID: 55b769476162882b88fb2982c95dcec9).
+2024-02-19 21:07:05 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 187, in privilege
+    await update_privilege(float(inputs[0]), int(inputs[1]))
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 99, in update_privilege
+    query = col.find_one({'discord_id'})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2445, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\server.py", line 130, in run_operation
+    message = operation.get_message(read_preference, conn, use_cmd)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 426, in get_message
+    request_id, msg, size, _ = _op_msg(
+                               ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: {'discord_id'}, of type: <class 'set'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: {'discord_id'}, of type: <class 'set'>
+2024-02-19 21:08:11 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:08:11 INFO logging in using static token
+2024-02-19 21:08:12 INFO Shard ID None has connected to Gateway (Session ID: 4db20fe99c87f7d73a13f55e6177a1b5).
+2024-02-19 21:08:15 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 187, in privilege
+    await update_privilege(float(inputs[0]), int(inputs[1]))
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 102, in update_privilege
+    name = await bot.fetch_user(discord_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\client.py", line 2531, in fetch_user
+    data = await self.http.get_user(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In user_id: Value "9.649591375260672e+17" is not snowflake.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In user_id: Value "9.649591375260672e+17" is not snowflake.
+2024-02-19 21:09:04 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:09:04 INFO logging in using static token
+2024-02-19 21:09:04 INFO Shard ID None has connected to Gateway (Session ID: 7cf4e6e8e537c1a7b9016e4a9dc5bfd4).
+2024-02-19 21:09:14 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 191, in privilege
+    await update_privilege(float(inputs[0]), int(inputs[1]))
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 109, in update_privilege
+    name = await bot.fetch_user(discord_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\client.py", line 2531, in fetch_user
+    data = await self.http.get_user(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In user_id: Value "9.649591375260672e+17" is not snowflake.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In user_id: Value "9.649591375260672e+17" is not snowflake.
+2024-02-19 21:11:49 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:11:49 INFO logging in using static token
+2024-02-19 21:11:50 INFO Shard ID None has connected to Gateway (Session ID: f717e9163cc4e5d1af6b205ca26b01e9).
+2024-02-19 21:11:54 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 186, in privilege
+    await update_privilege(float(inputs[0]), int(inputs[1]), name)
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 101, in update_privilege
+    col.insert_one({'discord_id': discord_id, 'discord_name': discord_name, 'privilege_level': privilege_level, 'queries': 0, 'image_queries': 0})
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 669, in insert_one
+    self._insert_one(
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1523, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1421, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2423, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 597, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 996, in command
+    self._raise_connection_failure(error)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+           ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\network.py", line 151, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <User id=964959137526067200 name='toes59' global_name='toes' bot=False>, of type: <class 'discord.user.User'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <User id=964959137526067200 name='toes59' global_name='toes' bot=False>, of type: <class 'discord.user.User'>
+2024-02-19 21:13:08 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-19 21:13:08 INFO logging in using static token
+2024-02-19 21:13:08 INFO Shard ID None has connected to Gateway (Session ID: 635a1e6cafc35ada7547a53d792ab344).
+2024-02-19 21:13:11 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-19 21:13:23 INFO Updated user 964959137526067200 to level 2 by consume_
+2024-02-19 21:13:33 INFO Updated user 964959137526067200 to level 0 by consume_
+2024-02-19 21:13:48 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-22 21:15:23 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:15:24 INFO logging in using static token
+2024-02-22 21:15:25 INFO Shard ID None has connected to Gateway (Session ID: 80d26e2f3dba3e854aecad429de4455f).
+2024-02-22 21:15:55 INFO Updated bank item, user=consume_, query=[1 1]
+2024-02-22 21:16:03 INFO Successfully fulfilled dhio search, user=consume_, query=hammer
+2024-02-22 21:16:07 INFO Updated bank item, user=consume_, query=[1 -1]
+2024-02-22 21:16:11 INFO Successfully fulfilled dhio search, user=consume_, query=hammer
+2024-02-22 21:16:18 INFO Updated bank item, user=consume_, query=[1 -1]
+2024-02-22 21:16:21 INFO Successfully fulfilled dhio search, user=consume_, query=hammer
+2024-02-22 21:16:27 INFO Updated bank item, user=consume_, query=[2 -1]
+2024-02-22 21:16:30 INFO Successfully fulfilled dhio search, user=consume_, query=hammer
+2024-02-22 21:16:43 ERROR Ignoring exception in command privilege
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: search is a required argument that is missing.
+2024-02-22 21:18:21 INFO Updated bank item, user=toes59, query=[1 1]
+2024-02-22 21:18:39 INFO Updated user 964959137526067200 to level 0 by consume_
+2024-02-22 21:18:49 WARNING Unauthorized user tried to update items, user=toes59
+2024-02-22 21:20:52 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:20:52 INFO logging in using static token
+2024-02-22 21:20:53 INFO Shard ID None has connected to Gateway (Session ID: 778b84a65f9b84bd0a2c05ac58b93787).
+2024-02-22 21:22:33 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:22:33 INFO logging in using static token
+2024-02-22 21:22:34 INFO Shard ID None has connected to Gateway (Session ID: 962fae8e1d8164f9d1fbe3042a979477).
+2024-02-22 21:24:38 WARNING Unauthorized user tried to update items, user=toes59
+2024-02-22 21:24:49 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-22 21:36:21 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:36:21 INFO logging in using static token
+2024-02-22 21:36:21 INFO Shard ID None has connected to Gateway (Session ID: e1e4995efae252413d5d93db2b5fd4b3).
+2024-02-22 21:36:36 INFO Successfully fulfilled hippo search, user=consume_, query=fire
+2024-02-22 21:36:46 INFO Updated bank item, user=consume_, query=[1244 1]
+2024-02-22 21:36:54 INFO Successfully fulfilled mord search, user=consume_, query=ring
+2024-02-22 21:37:05 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: search is a required argument that is missing.
+2024-02-22 21:37:17 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: search is a required argument that is missing.
+2024-02-22 21:37:23 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 271, in stats
+    user_stats = get_statistics(int(search))
+                                ^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'all'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: invalid literal for int() with base 10: 'all'
+2024-02-22 21:39:24 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:39:24 INFO logging in using static token
+2024-02-22 21:39:25 INFO Shard ID None has connected to Gateway (Session ID: 447b0d20bfc17e6b5ffc3d4a305db912).
+2024-02-22 21:39:44 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 273, in stats
+    response='Statistics about '+name+'\n'+str(user_stats[0])+' Queries made for items\n'+str(user_stats[1])+' Images displayed'
+             ~~~~~~~~~~~~~~~~~~~^~~~~
+TypeError: can only concatenate str (not "User") to str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: can only concatenate str (not "User") to str
+2024-02-22 21:40:02 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:40:02 INFO logging in using static token
+2024-02-22 21:40:04 INFO Shard ID None has connected to Gateway (Session ID: cb0ca859e2640beec448365178541c7b).
+2024-02-22 21:42:36 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:42:36 INFO logging in using static token
+2024-02-22 21:42:36 INFO Shard ID None has connected to Gateway (Session ID: cd0cbdbea4cc33fc9f4bfd632850ff21).
+2024-02-22 21:42:47 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 275, in stats
+    user_stats = get_statistics(int(search))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 125, in get_statistics
+    elif discord_id.isnumeric():
+         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'isnumeric'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'int' object has no attribute 'isnumeric'
+2024-02-22 21:43:15 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 281, in stats
+    response='Statistics about '+str(name)+'\n'+str(user_stats[0])+' Queries made for items\n'+str(user_stats[1])+' Images displayed'
+                                     ^^^^
+UnboundLocalError: cannot access local variable 'name' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: cannot access local variable 'name' where it is not associated with a value
+2024-02-22 21:44:22 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:44:22 INFO logging in using static token
+2024-02-22 21:44:23 INFO Shard ID None has connected to Gateway (Session ID: 60954f3b5fc6562ebc83bf7fb7cff36c).
+2024-02-22 21:44:27 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 281, in stats
+    response='Statistics about '+str(name)+'\n'+str(user_stats[0])+' Queries made for items\n'+str(user_stats[1])+' Images displayed'
+                                     ^^^^
+UnboundLocalError: cannot access local variable 'name' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: cannot access local variable 'name' where it is not associated with a value
+2024-02-22 21:44:45 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:44:45 INFO logging in using static token
+2024-02-22 21:44:45 INFO Shard ID None has connected to Gateway (Session ID: b7979fd6768e44511bc6429df799bdaf).
+2024-02-22 21:44:57 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 275, in stats
+    user_stats = get_statistics(int(search))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 125, in get_statistics
+    elif discord_id.isnumeric():
+         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'isnumeric'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'int' object has no attribute 'isnumeric'
+2024-02-22 21:45:17 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:45:17 INFO logging in using static token
+2024-02-22 21:45:17 INFO Shard ID None has connected to Gateway (Session ID: 2f9666c4d6e40bbcf65ff5a55cbe83cd).
+2024-02-22 21:45:36 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 275, in stats
+    user_stats = get_statistics(int(search))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 127, in get_statistics
+    queries[0]=query['queries']
+               ~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+2024-02-22 21:45:43 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 280, in stats
+    user_stats = get_statistics(str(search))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 131, in get_statistics
+    queries[0]=query['queries']
+               ~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+2024-02-22 21:54:11 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:54:11 INFO logging in using static token
+2024-02-22 21:54:11 INFO Shard ID None has connected to Gateway (Session ID: bdf4abbe5874360f9bf9e4c0db7dcd8f).
+2024-02-22 21:54:19 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-22 21:54:32 ERROR Ignoring exception in command statistics
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 293, in stats
+    user_stats = get_statistics(str(search))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 144, in get_statistics
+    queries[0]=query['queries']
+               ~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+2024-02-22 21:56:30 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 236, in find
+    await ctx.send(get_items_formatted(search, 'bloodthorn', ctx.author.id, ctx.author))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 57, in get_items_formatted
+    increment_search(discord_id, discord_name, 1)
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 48, in increment_search
+    col.insert_one({"discord_id": discord_id, "discord_name": discord_name, "privilege": 0, "queries": 1, "image_queries": 0})
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 669, in insert_one
+    self._insert_one(
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1523, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1421, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2423, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 597, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 996, in command
+    self._raise_connection_failure(error)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+           ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\network.py", line 151, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+2024-02-22 21:57:18 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:57:18 INFO logging in using static token
+2024-02-22 21:57:19 INFO Shard ID None has connected to Gateway (Session ID: eb99f915e3cf9363b8701b2e23843bba).
+2024-02-22 21:57:23 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 236, in find
+    await ctx.send(get_items_formatted(search, 'bloodthorn', ctx.author.id, ctx.author))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 57, in get_items_formatted
+    increment_search(discord_id, discord_name, 1)
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 48, in increment_search
+    col.insert_one({"discord_id": discord_id, "discord_name": discord_name, "privilege": 0, "queries": 1, "image_queries": 0})
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 669, in insert_one
+    self._insert_one(
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1523, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1421, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2423, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 597, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 996, in command
+    self._raise_connection_failure(error)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+           ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\network.py", line 151, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+2024-02-22 21:57:42 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 21:57:42 INFO logging in using static token
+2024-02-22 21:57:42 INFO Shard ID None has connected to Gateway (Session ID: 57c184acf80b5138709a566fd2c2eaaa).
+2024-02-22 21:57:46 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 236, in find
+    await ctx.send(get_items_formatted(search, 'bloodthorn', ctx.author.id, ctx.author))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 57, in get_items_formatted
+    increment_search(discord_id, discord_name, 1)
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 48, in increment_search
+    col.insert_one({"discord_id": discord_id, "discord_name": discord_name, "privilege": 0, "queries": 1, "image_queries": 0})
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 669, in insert_one
+    self._insert_one(
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1523, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1421, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2423, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 597, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 996, in command
+    self._raise_connection_failure(error)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+           ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\network.py", line 151, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+2024-02-22 22:00:22 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:00:22 INFO logging in using static token
+2024-02-22 22:00:23 INFO Shard ID None has connected to Gateway (Session ID: 9118ad706b7521558ff144b9d39fcc2b).
+2024-02-22 22:00:27 ERROR Ignoring exception in command bt
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 238, in find
+    await ctx.send(get_items_formatted(search, 'bloodthorn', ctx.author.id, ctx.author))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 59, in get_items_formatted
+    increment_search(discord_id, discord_name, 1)
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 50, in increment_search
+    col.insert_one({"discord_id": discord_id, "discord_name": discord_name, "privilege": 0, "queries": 1, "image_queries": 0})
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 669, in insert_one
+    self._insert_one(
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1523, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1421, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1462, in _retry_internal
+    ).run()
+      ^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2423, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 597, in _insert_command
+    result = conn.command(
+             ^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 996, in command
+    self._raise_connection_failure(error)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+           ^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\network.py", line 151, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+                                          ^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\message.py", line 762, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+bson.errors.InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: InvalidDocument: cannot encode object: <Member id=964959137526067200 name='toes59' global_name='toes' bot=False nick=None guild=<Guild id=797565949183393892 name="Reed's server" shard_id=0 chunked=True member_count=3>>, of type: <class 'discord.member.Member'>
+2024-02-22 22:01:17 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:01:17 INFO logging in using static token
+2024-02-22 22:01:17 INFO Shard ID None has connected to Gateway (Session ID: 8470318da7aeab8e072132e526f3ffa6).
+2024-02-22 22:01:21 INFO Successfully fulfilled bt search, user=toes59, query=invo
+2024-02-22 22:01:52 WARNING Unauthorized user tried to update items, user=toes59
+2024-02-22 22:01:57 INFO Successfully fulfilled bt search, user=toes59, query=invo
+2024-02-22 22:18:33 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:18:33 INFO logging in using static token
+2024-02-22 22:18:34 INFO Shard ID None has connected to Gateway (Session ID: 6bee853a769eac8539a2e7ba4c0d5383).
+2024-02-22 22:18:40 INFO Updated user toes59 to level 1 by consume_
+2024-02-22 22:18:50 INFO Updated user toes59 to level 0 by consume_
+2024-02-22 22:19:01 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-22 22:27:03 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:27:03 INFO logging in using static token
+2024-02-22 22:27:03 INFO Shard ID None has connected to Gateway (Session ID: ade59edc5499c7adc4484019223deb38).
+2024-02-22 22:27:07 ERROR Error displaying ids for: invo by user: consume_
+2024-02-22 22:27:23 ERROR Error displaying ids for: invo by user: consume_
+2024-02-22 22:27:31 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:27:31 INFO logging in using static token
+2024-02-22 22:27:32 INFO Shard ID None has connected to Gateway (Session ID: 5311bad7e383e864b2db47719aa130f7).
+2024-02-22 22:27:34 ERROR Ignoring exception in command id
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 340, in ids
+    await ctx.send(response)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+2024-02-22 22:28:01 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:28:01 INFO logging in using static token
+2024-02-22 22:28:01 INFO Shard ID None has connected to Gateway (Session ID: c8b6e0862f3ffccf05f64932283a1ea5).
+2024-02-22 22:28:03 ERROR Ignoring exception in command id
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 340, in ids
+    await ctx.send(response)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+2024-02-22 22:28:09 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-22 22:28:24 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:28:24 INFO logging in using static token
+2024-02-22 22:28:25 INFO Shard ID None has connected to Gateway (Session ID: 47832517ecdbef2fa099da3651af5766).
+2024-02-22 22:28:27 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-22 22:28:44 ERROR Ignoring exception in command id
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 341, in ids
+    await ctx.send(response)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+2024-02-22 22:29:34 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:29:34 INFO logging in using static token
+2024-02-22 22:29:35 INFO Shard ID None has connected to Gateway (Session ID: 3ddbec70b096a72f0ce51b64d52c498a).
+2024-02-22 22:29:39 ERROR Error displaying ids for: invo by user: consume_
+2024-02-22 22:29:59 ERROR Error displaying ids for: mighty armlet by user: consume_
+2024-02-22 22:30:19 ERROR Error displaying ids for: as;ldkfj;askldjf by user: consume_
+2024-02-22 22:31:22 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:31:22 INFO logging in using static token
+2024-02-22 22:31:23 INFO Shard ID None has connected to Gateway (Session ID: 91e7936fd20fb6c5380200cc9fae5a4f).
+2024-02-22 22:31:25 ERROR Error displaying ids for: 123498717234 by user: consume_
+2024-02-22 22:31:31 ERROR Error displaying ids for: flames by user: consume_
+2024-02-22 22:31:40 ERROR Ignoring exception in command id
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 345, in ids
+    await ctx.send(response)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+2024-02-22 22:31:58 ERROR Error displaying ids for: axe by user: consume_
+2024-02-22 22:32:02 ERROR Error displaying ids for: halberd by user: consume_
+2024-02-22 22:32:19 ERROR Ignoring exception in command id
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 345, in ids
+    await ctx.send(response)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+2024-02-22 22:32:22 ERROR Error displaying ids for: poison by user: consume_
+2024-02-22 22:32:35 ERROR Ignoring exception in command id
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 345, in ids
+    await ctx.send(response)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+2024-02-22 22:32:38 ERROR Error displaying ids for: flames by user: consume_
+2024-02-22 22:40:02 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:40:02 INFO logging in using static token
+2024-02-22 22:40:03 INFO Shard ID None has connected to Gateway (Session ID: 0cd256bb55337807171ce925bb938573).
+2024-02-22 22:40:54 ERROR Error displaying hrungnir ids for: helm by user: consume_
+2024-02-22 22:46:39 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:46:39 INFO logging in using static token
+2024-02-22 22:46:40 INFO Shard ID None has connected to Gateway (Session ID: 1b8ffed18f7356b2963b812f7d451146).
+2024-02-22 22:49:41 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:49:41 INFO logging in using static token
+2024-02-22 22:49:42 INFO Shard ID None has connected to Gateway (Session ID: fb3e65856fc7eb31806aba705b9b114b).
+2024-02-22 22:51:57 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 22:51:57 INFO logging in using static token
+2024-02-22 22:51:58 INFO Shard ID None has connected to Gateway (Session ID: 9307c03798a1d55e07e505dc48b20940).
+2024-02-22 22:52:01 INFO Successfully displayed image, user=consume_, image #1
+2024-02-22 23:00:15 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 23:00:15 INFO logging in using static token
+2024-02-22 23:00:16 INFO Shard ID None has connected to Gateway (Session ID: 7804d0dad48ddf20ae52c08545b9fd82).
+2024-02-22 23:00:23 ERROR Ignoring exception in command get_previous
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: search is a required argument that is missing.
+2024-02-22 23:00:33 ERROR Ignoring exception in command get_previous
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\Dhio-Bot\bot\bot.py", line 396, in get_previous
+    to_log.append(message.content+' '+message.author.name+' '+message.author.id)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rmitc\AppData\Local\Programs\Python\Python311\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: can only concatenate str (not "int") to str
+2024-02-22 23:01:13 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-22 23:01:13 INFO logging in using static token
+2024-02-22 23:01:14 INFO Shard ID None has connected to Gateway (Session ID: 57ce536409f2698678b89cd2d5b1cead).

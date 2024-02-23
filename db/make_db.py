@@ -9,8 +9,8 @@ db = client['dhio']
 col = db['users']
 col.drop()
 col = db['users']
-col.insert_one({"discord_id": 148113452534202368, "discord_name": "Reed", "privilege": 2, "queries": 0, "image_queries": 0})
-col.insert_one({"discord_id": 654157138763186206, "discord_name": "Colleen", "privilege": 2, "queries": 0, "image_queries": 0})
+#col.insert_one({"discord_id": 148113452534202368, "discord_name": "Reed", "privilege": 2, "queries": 0, "image_queries": 0})
+#col.insert_one({"discord_id": 654157138763186206, "discord_name": "Colleen", "privilege": 2, "queries": 0, "image_queries": 0})
 
 #Last modification date
 col = db['date']
@@ -118,7 +118,7 @@ for i in mordris_items:
 prot_items = []
 with open('db/proteus_items.json') as f:
     prot_items = json.load(f)
-for i in bt_items:
+for i in prot_items:
     entry = { "item_name": i[0].lower().replace('-', ' '), "db_id": int(i[1]), "amount": 0, "id": id, "class": determine_class(i[0].lower(), 2), "bank": "proteus"}
     col.insert_one(entry)
     id+=1

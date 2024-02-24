@@ -1823,3 +1823,48 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Typ
 2024-02-22 23:01:13 WARNING PyNaCl is not installed, voice will NOT be supported
 2024-02-22 23:01:13 INFO logging in using static token
 2024-02-22 23:01:14 INFO Shard ID None has connected to Gateway (Session ID: 57ce536409f2698678b89cd2d5b1cead).
+2024-02-23 21:05:58 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:05:58 INFO logging in using static token
+2024-02-23 21:05:59 INFO Shard ID None has connected to Gateway (Session ID: b5e8fffddf6351fdf0e7c2be59875a10).
+2024-02-23 21:06:37 ERROR Error doing find query for Dhiothu. Search is: knight by user: consume_
+2024-02-23 21:06:59 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:06:59 INFO logging in using static token
+2024-02-23 21:06:59 INFO Shard ID None has connected to Gateway (Session ID: 72cab62a370903708c76af5b80746d3f).
+2024-02-23 21:07:09 ERROR Error doing find query for Mordris. Search is: inferno by user: consume_
+2024-02-23 21:17:25 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:17:25 INFO logging in using static token
+2024-02-23 21:17:26 INFO Shard ID None has connected to Gateway (Session ID: 75e6a3a4971b55d989603c6d10659403).
+2024-02-23 21:17:45 ERROR Error doing find query for Bloodthorn. Search is: invo by user: consume_
+2024-02-23 21:21:29 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:21:29 INFO logging in using static token
+2024-02-23 21:21:29 INFO Shard ID None has connected to Gateway (Session ID: c26aa80b69c6d6515713cef80722ffa7).
+2024-02-23 21:21:34 INFO Successfully fulfilled bt search, user=consume_, query=invo
+2024-02-23 21:22:29 WARNING Unauthorized user tried to update items, user=consume_
+2024-02-23 21:23:02 INFO Updated bank item, user=consume_, query=[760 1]
+2024-02-23 21:23:15 INFO Successfully fulfilled bt search, user=consume_, query=rejuv
+2024-02-23 21:24:10 INFO Updated user 643889286558646274 to level 1 by consume_
+2024-02-23 21:24:39 WARNING Unauthorized user tried to update items, user=EX Apollo#4586
+2024-02-23 21:25:28 WARNING Unauthorized user tried to update items, user=EX Apollo#4586
+2024-02-23 21:26:28 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:26:28 INFO logging in using static token
+2024-02-23 21:26:29 INFO Shard ID None has connected to Gateway (Session ID: 65ee820e06139a8b370837d4527e0eb6).
+2024-02-23 21:29:02 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-23 21:29:17 WARNING Unauthorized user tried to update items, user=toes59
+2024-02-23 21:29:54 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:29:54 INFO logging in using static token
+2024-02-23 21:29:55 INFO Shard ID None has connected to Gateway (Session ID: d3011e03edab0b7864ba40121da60708).
+2024-02-23 21:30:00 WARNING Unauthorized user tried to update items, user=toes59
+2024-02-23 21:31:28 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:31:28 INFO logging in using static token
+2024-02-23 21:31:28 INFO Shard ID None has connected to Gateway (Session ID: 86c4c835dc57e532946f40804bbdc52e).
+2024-02-23 21:31:33 INFO Updated user 964959137526067200 to level 1 by consume_
+2024-02-23 21:31:41 INFO Updated bank item, user=toes59, query=[1 1]
+2024-02-23 21:55:32 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:55:32 INFO logging in using static token
+2024-02-23 21:55:32 INFO Shard ID None has connected to Gateway (Session ID: 49a8ead93e41aab21346cb7b66cc2f48).
+2024-02-23 21:55:47 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 21:55:47 INFO logging in using static token
+2024-02-23 21:55:48 INFO Shard ID None has connected to Gateway (Session ID: 897d95b8506cedb6116c2eea69aac144).
+2024-02-23 22:06:16 WARNING PyNaCl is not installed, voice will NOT be supported
+2024-02-23 22:06:16 INFO logging in using static token
+2024-02-23 22:06:16 INFO Shard ID None has connected to Gateway (Session ID: 8ec82b346b39d311021a6f0e10748925).

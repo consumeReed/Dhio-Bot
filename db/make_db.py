@@ -16,7 +16,7 @@ col = db['users']
 col = db['date']
 col.drop()
 col = db['date']
-col.insert_one({"id": 1},{'$set':{"date": datetime.today()}})
+col.insert_one({"id": 1, "date": datetime.today()})
 
 #Recently updated items
 col = db['recent']

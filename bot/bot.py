@@ -129,7 +129,7 @@ async def update_privilege(discord_id, privilege_level, discord_name):
     if str(discord_id) != 'name':
         query = col.find_one({'discord_id': int(discord_id)})
         if query == None:
-            col.insert_one({'discord_id': int(discord_id), 'discord_name': discord_name, 'privilege_level': privilege_level, 'queries': 0, 'image_queries': 0})
+            col.insert_one({'discord_id': int(discord_id), 'discord_name': discord_name, 'privilege': privilege_level, 'queries': 0, 'image_queries': 0})
         else:
             col.update_one({'discord_id': int(discord_id)}, {'$set': {'privilege': privilege_level}})
     else:
@@ -240,14 +240,12 @@ async def privilege_list(message):
         message_author = message.author.id
         if message_author == bot.user:
             return
-        header = "Users and their privilege level:\n"
         response = ""
         for user in get_privilege_users(2):
             if float(user['discord_id']) == message_author:
                 privilege_list = get_privilege_users(1)
                 for user in privilege_list:
-                    tmp_user = await bot.fetch_user(int(user['discord_id']))
-                    response+=str(tmp_user) + ' is level ' + str(user['privilege']) + '\n'
+                    response+=str(user['discord_name']) + ' is level ' + str(user['privilege']) + '\n'
             break
         if response != "":
             await message.send(response)
@@ -262,7 +260,7 @@ async def find_bt(ctx, *, search):
         else:
             await ctx.send('Bloodthorn bank is disabled currently')
         logging.info("Successfully fulfilled bt search, user="+str(ctx.author)+", query="+search)
-    except:
+    except Exception as e:
         logging.error("Error doing find query for Bloodthorn. Search is: "+ str(search)+ ' by user: '+str(ctx.author))
 
 @bot.command(name='mord', help='Search the available Mordris items banked. Input either item name or class')

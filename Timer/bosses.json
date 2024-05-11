@@ -1,0 +1,8 @@
+[
+        {
+            "boss_name": ["mordris", "mord", "mordy", "mordi"],
+            "respawn_time": 1440,
+            "window": 1440,
+            "dead": 43700
+        }
+]

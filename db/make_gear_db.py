@@ -9,4 +9,5 @@ col = db['gear']
 col.drop()
 col = db['gear']
 #col.insert_one({"discord_id": 148113452534202368, "discord_name": "Reed", "privilege": 2, "queries": 0, "image_queries": 0})
-#col.insert_one({"discord_id": 654157138763186206, "discord_name": "Colleen", "privilege": 2, "queries": 0, "image_queries": 0})
+
+col.insert_one({'player': 'Admin', 'item': 'Shoreline Sword', 'time': 0, 'quantity': 0})

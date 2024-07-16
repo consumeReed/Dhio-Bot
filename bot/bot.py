@@ -198,7 +198,10 @@ async def update(message, *, search):
         if message_author == bot.user:
             return
         for user in get_privilege_users(1):
-            if float(user['discord_id']) == message_author:
+            print(message_author)
+            print(user)
+            if int(user['discord_id']) == message_author:
+                print('good')
                 inputs = str(search).split()
                 modifer = '+'
                 if int(inputs[1]) < 0:
@@ -220,11 +223,11 @@ async def privilege(message, *, search):
         if message_author == bot.user:
             return
         for user in get_privilege_users(2):
-            if float(user['discord_id']) == message_author:
+            if int(user['discord_id']) == message_author:
                 inputs = str(search).split()
                 if str(inputs[0]).isnumeric():
                     name = await bot.fetch_user(int(inputs[0]))
-                    await update_privilege(float(inputs[0]), int(inputs[1]), str(name))
+                    await update_privilege(int(inputs[0]), int(inputs[1]), str(name))
                     await message.send('Successfully updated privilege for ' + str(name) + ' to level ' + str(inputs[1]))
                 else:
                     await update_privilege('name', int(inputs[1]), str(inputs[0]))
@@ -242,7 +245,7 @@ async def privilege_list(message):
             return
         response = ""
         for user in get_privilege_users(2):
-            if float(user['discord_id']) == message_author:
+            if int(user['discord_id']) == message_author:
                 privilege_list = get_privilege_users(1)
                 for user in privilege_list:
                     response+=str(user['discord_name']) + ' is level ' + str(user['privilege']) + '\n'

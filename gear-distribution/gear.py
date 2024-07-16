@@ -4,6 +4,7 @@ import pymongo
 from datetime import datetime
 from time import time
 import sys
+import re
 
 '''
 won Pyroblast Godly bloodleaf charm of invocation
@@ -27,7 +28,7 @@ db = client['dhio']
 async def on_message(message):
     if message.channel == 'Gear Distribution':
         col = db['gear']
-        text = message.content
+        text = re.sub('\s\s+', " ", message.content)
         if text.startswith('won'):
             try:
                 gear_time = int(time.time())
@@ -60,9 +61,9 @@ async def on_message(message):
                 for item in result:
                     if item['time'] >= period_start and item['time'] <= period_end:
                         if item['quantity'] > 1:
-                            output += time.strftime("%b %d %Y") + " " + item['quantity'] + " " + item['item'] + "\n"
+                            output += time.strftime("%b %d %Y", item['time']) + "  " + item['quantity'] + " " + item['item'] + "\n"
                         else:
-                            output += time.strftime("%b %d %Y") + " " + item['item'] + "\n"
+                            output += time.strftime("%b %d %Y", item['time']) + "  " + item['item'] + "\n"
             except:
                 await message.channel.send('Invalid gear input')
         else:
